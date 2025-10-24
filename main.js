@@ -82,11 +82,9 @@ let game = boxes.forEach((box) => {
         checkWin();
         btnCount++;
         console.log(btnCount);
+
+        if(box.innerText === 'X'){
+            box.classList.add('color');
+        }
     })
 })
-
-if(box.innerText === 'X'){
-    box.style.color = 'blue';
-}else{
-    box.style.color = 'black';
-}
