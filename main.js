@@ -38,7 +38,9 @@ const resetGame = () => {
     enableBoxes();
     msgContainer.classList.add('hide');
     turnO = true;
+    btnCount = 0;
     game();
+    checkWin();
 }   
 
 reset.addEventListener('click', resetGame);
