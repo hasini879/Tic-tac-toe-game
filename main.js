@@ -62,10 +62,10 @@ const checkWin = () => {
             showMsg(pos1Val);
         }
     }
-        if(btnCount === 8){
-            msg.innerText = "It's a draw!";
-            msgContainer.classList.remove('hide');
-        }
+    if (btnCount === 8 && msgContainer.classList.contains('hide')) {
+    msg.innerText = "It's a draw!";
+    msgContainer.classList.remove('hide');
+    }
 }
 
 
