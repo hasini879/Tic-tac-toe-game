@@ -87,6 +87,8 @@ let game = boxes.forEach((box) => {
 
         if(box.innerText === 'X'){
             box.classList.add('color');
+        }else{
+            box.classList.remove('color');
         }
     })
 })
