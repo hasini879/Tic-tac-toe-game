@@ -61,11 +61,11 @@ const checkWin = () => {
         if(pos1Val !== '' && pos1Val === pos2Val && pos2Val === pos3Val){
             showMsg(pos1Val);
         }
+    }
         if(btnCount === 8){
             msg.innerText = "It's a draw!";
             msgContainer.classList.remove('hide');
         }
-    }
 }
 
 
